@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Euphoria Talents - Recruitment Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom font for the logo text */
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    .logo-font {
+      font-family: 'Pacifico', cursive;
+    }
+
+    /* Subtle background gradient */
+    body {
+      background: linear-gradient(135deg, #f0f2f6, #ffffff);
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+    }
+
+    /* Container max width */
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right:1rem;
+    }
+
+    /* Logo wings gradient fill */
+    .wing-gradient {
+      fill: url(#wingGradient);
+    }
+
+    /* Smooth hover effect for buttons */
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(255, 111, 0, 0.3);
+    }
+
+    button:focus {
+      outline: 2px solid #ff6f00;
+      outline-offset: 2px;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container flex items-center justify-between py-4">
+      <a href="#" class="flex items-center space-x-3">
+        <!-- Custom SVG Logo with gradient as close to the provided design -->
+        <svg width="50" height="50" viewBox="0 0 64 64" aria-label="Euphoria Talents logo with stylized orange to purple wings and central circle" role="img" xmlns="http://www.w3.org/2000/svg" class="block">
+          <defs>
+            <linearGradient id="wingGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FF6F00" />
+              <stop offset="50%" stop-color="#D32F2F" />
+              <stop offset="100%" stop-color="#7B1FA2" />
+            </linearGradient>
+          </defs>
+          <!-- Left wing -->
+          <path class="wing-gradient" d="M18 10 C10 20, 12 40, 25 50" stroke="none" />
+          <path class="wing-gradient" d="M22 12 C17 20, 18 38, 28 48" stroke="none" />
+          <!-- Right wing mirrored -->
+          <path class="wing-gradient" d="M46 10 C54 20, 52 40, 39 50" stroke="none" />
+          <path class="wing-gradient" d="M42 12 C47 20, 46 38, 36 48" stroke="none" />
+          <!-- Central circle -->
+          <circle cx="32" cy="32" r="5" fill="#D32F2F" />
+        </svg>
+
+        <div>
+          <h1 class="logo-font text-3xl bg-gradient-to-r from-orange-500 via-red-600 to-purple-700 bg-clip-text text-transparent select-none">Euphoria Talents</h1>
+          <p class="text-sm tracking-wide text-gray-600 select-none">Talent | Transparency | Trust</p>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="flex space-x-6 text-gray-700 font-medium">
+          <li><a href="#about" class="hover:text-orange-600 transition-colors">About Us</a></li>
+          <li><a href="#services" class="hover:text-orange-600 transition-colors">Services</a></li>
+          
+          <li><a href="#contact" class="hover:text-orange-600 transition-colors">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mt-12 container">
+    <!-- Hero Section -->
+    <section class="flex flex-col-reverse lg:flex-row items-center gap-12 mb-20">
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <h2 class="text-5xl font-extrabold text-gray-900 leading-tight mb-4">Discover Your Next Career Opportunity</h2>
+        <p class="text-lg text-gray-600 mb-8">Empowering talents and companies with transparency, integrity, and trust. Let Euphoria Talents be your bridge to success.</p>
+        
+      </div>
+      <div class="lg:w-1/2">
+        <img 
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/db6e276f-f6ec-46a1-b5d0-ae1dc02d85fe.png" 
+          alt="Diverse recruitment team collaborating in a modern office with laptops and documents, showcasing teamwork and engagement"
+          class="rounded-lg shadow-lg w-full object-cover max-h-96" 
+          onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6358b2d3-2e70-426b-a56f-34e97189ceec.png';"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="mb-20 text-center max-w-4xl mx-auto">
+      <h3 class="text-4xl font-bold text-gray-900 mb-6">About Euphoria Talents</h3>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        At <strong>Euphoria Talents</strong>, we pride ourselves on connecting exceptional talent with leading organizations. Our commitment to transparency and trust makes us a preferred recruitment partner across industries.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="mb-20">
+      <h3 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Services</h3>
+      <div class="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition-shadow duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c4514978-07b4-4936-9f81-969ff9138efe.png" alt="Icon representing talent sourcing, showing people coming together illustration in orange and purple" class="mx-auto mb-6" />
+          <h4 class="text-xl font-semibold mb-2">Talent Sourcing</h4>
+          <p class="text-gray-600">We identify and attract top candidates to fit your specific needs with precision and care.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition-shadow duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/151d872c-fbc4-4fda-a67b-53a25161ba6d.png" alt="Icon symbolizing transparency, featuring an open window or magnifying glass illustration with orange and purple tones" class="mx-auto mb-6" />
+          <h4 class="text-xl font-semibold mb-2">Transparent Process</h4>
+          <p class="text-gray-600">Clear communication and honest assessments throughout the hiring journey.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center hover:shadow-2xl transition-shadow duration-300">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d4b7d5bf-93be-49e2-8c71-d0a97f9f583e.png" alt="Icon representing trust, showing handshake or shield illustration in gradient orange and purple colors" class="mx-auto mb-6" />
+          <h4 class="text-xl font-semibold mb-2">Trusted Partnerships</h4>
+          <p class="text-gray-600">Building long-term relationships based on integrity and mutual success.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-20 bg-white max-w-4xl mx-auto rounded-lg shadow-lg p-10">
+      <h3 class="text-4xl font-bold text-gray-900 mb-8 text-center">Get in Touch</h3>
+      <form id="contact-form" class="space-y-6" aria-label="Contact form to reach Euphoria Talents recruitment agency">
+        <div>
+          <label for="name" class="block mb-2 font-semibold text-gray-700">Full Name</label>
+          <input type="text" id="name" name="name" required class="w-full rounded border border-gray-300 p-3 focus:border-orange-500 focus:ring focus:ring-orange-200 focus:outline-none" />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold text-gray-700">Email Address</label>
+          <input type="email" id="email" name="email" required class="w-full rounded border border-gray-300 p-3 focus:border-orange-500 focus:ring focus:ring-orange-200 focus:outline-none" />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold text-gray-700">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full resize-y rounded border border-gray-300 p-3 focus:border-orange-500 focus:ring focus:ring-orange-200 focus:outline-none"></textarea>
+        </div>
+        <button type="submit" class="bg-gradient-to-r from-orange-500 via-red-600 to-purple-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg w-full hover:shadow-xl transition-shadow duration-300">
+          Send Message
+        </button>
+      </form>
+      <div id="form-success" role="alert" class="hidden mt-6 p-4 bg-green-100 text-green-800 rounded text-center"></div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-50 border-t py-6 text-center text-gray-600 text-sm select-none">
+    © 2024 Euphoria Talents. All rights reserved.
+  </footer>
+
+  <script>
+    // Contact form submit handler with simple validation and success message
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const successDiv = document.getElementById('form-success');
+
+      // Simulate form submission delay
+      successDiv.textContent = '';
+      successDiv.classList.add('hidden');
+
+      setTimeout(() => {
+        successDiv.textContent = 'Thank you for contacting Euphoria Talents. We will get back to you shortly.';
+        successDiv.classList.remove('hidden');
+        this.reset();
+      }, 800);
+    });
+  </script>
+</body>
+</html>
+
